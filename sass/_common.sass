@@ -1,0 +1,296 @@
+$red: #ff0d04
+$border: #626262
+@font-face
+	font-family: HelveticaNeueCyr
+	src: url(../fonts/HelveticaNeueCyr-light.otf)
+body
+	font-family: HelveticaNeueCyr		
+.wrap
+	width: 1170px
+	margin: 0 auto
+	+box
+.h3
+	color: $red
+	font-size: 30px
+	line-height: 35px
+	font-weight: normal
+	display: block
+.h4
+	color: #616161
+	font-size: 18px
+	line-height: 18px
+	font-weight: bold
+
+.h-dark
+	color: #464646 	
+.data
+	color: #c6c6c6
+	font-size: 15px
+	line-height: 15px
+	font-style: italic
+.text
+	color: #6c6c6c
+	font-size: 15px
+	line-height: 25px
+	text-align: justify
+.link
+	display: inline-block	
+	&:hover
+		text-decoration: none
+/*------------header----------------------------------------*/
+.header
+	padding-top: 12px
+	border-bottom: 1px solid $border 
+	+clr
+.header__left
+	float: left
+.header__right
+	float: right
+	margin: 18px 13px 0 0
+.header__img
+	display: block
+	height: 373px
+	width: 390px
+	overflow: hidden
+	text-align: center
+	img	
+		height: 100%
+/*------------main----------------------------------------*/
+.main
+	padding: 25px 0 7px 
+	border-bottom: 1px solid $border 
+	+clr
+	.h3
+		margin-bottom: 7px
+	.data
+		margin-bottom: 15px
+	.text
+		margin-bottom: 21px		
+	.link
+		margin-bottom: 17px	
+.main__left
+	float: left
+	width: 770px
+	padding: 0px 0 0 31px
+	+box 
+.main__right
+	float: right	
+	width: 357px
+	+box
+.main__news
+	margin-top: 32px
+	&:first-child
+		margin-top: 0	
+.main__coment-link
+	display: inline-block
+	color: $red
+	font-size: 15px
+	line-height: 15px 
+	text-decoration: underline
+	padding-right: 17px 
+	&:hover
+		text-decoration: none
+.link-first
+	border-right: 1px solid $red
+	padding-right: 8px  
+	margin-left: 0
+	margin-right: 6px	
+.main__coment-social
+	display: inline-block
+	cursor: pointer
+	vertical-align: middle
+.main__content
+	+clr
+.main__content-left
+	float: left
+	display: inline-block
+.main__content-right
+	float: right	
+	display: inline-block		
+	width: 505px
+.main__img
+	height: 142px
+	width: 215px
+	overflow: hidden
+	text-align: center
+	img	
+		min-height: 100%
+.main__bottom
+	text-align: center
+.main__blog
+	border-bottom: 1px solid $border 
+	padding: 6px 0 16px 18px
+	.h3
+		margin-bottom: 13px
+.main__links		
+	padding: 14px 0 16px 18px
+	.h3
+		margin-bottom: 25px
+.main__link
+	display: inline-block
+	margin-bottom: 7px	
+.main__years
+	list-style: url(../img/list.png) 
+	margin-left: 15px 
+	a	
+		color: #ff0d04
+		font-size: 14px
+		line-height: 25px
+		text-decoration: none
+		&:hover
+			text-decoration: underline 
+/*------------footer----------------------------------------*/	
+.footer
+	padding: 19px 10px 25px 19px 
+	+clr
+.footer__left
+	float: left
+.footer__right
+	float: right
+.footer__center
+	margin-left: 380px
+.footer__right-bottom
+	text-align: center				
+/*-----nav------*/
+.nav
+	margin-bottom: 80px
+	+clr
+	li
+		float: left
+		margin-left: 48px
+		&:first-child
+			margin-left: 0
+	a		
+		text-decoration: none
+		color: #616161
+		font-family: "HelveticaNeueCyr"
+		font-size: 32px
+		line-height: 32px
+		&:hover,
+			color: #F00
+			.i-blog
+				+s(i-blog_h)
+			.i-smi
+				+s(i-smi_h)		
+			.i-bio
+				+s(i-bio_h)
+			.i-cont
+				+s(i-cont_h) 
+	.is-active	
+		a
+			color: #F00
+		.i-blog
+			+s(i-blog_h)
+		.i-smi
+			+s(i-smi_h)		
+		.i-bio
+			+s(i-bio_h)
+		.i-cont
+			+s(i-cont_h) 						 
+	.ico
+		margin-right: 8px
+/*-----logo-----*/
+.logo
+	+hide-text
+	display: inline-block
+	background: url(../img/logo.png)
+	height: 168px
+	width: 273px		
+.logo-greenweb	
+	background: url(../img/logo-greenweb.png)
+	height: 30px
+	width: 166px	
+/*-----pager-----*/
+.pager
+	display: inline-block
+	+clr
+	li
+		float: left
+		margin-right: 5px
+	a, li	
+		color: $red 	
+		font-size: 14px
+		line-height: 30px
+		&:hover
+			text-decoration: none 
+/*-----search------*/
+.search
+	border-bottom: 1px solid $border 
+	padding: 13px 0 24px 16px	
+	.h3
+		margin-bottom: 13px
+.search__form
+	border: 1px solid #d3d3d3	
+	text-align: right
+	vertical-align: middle
+	display: block	
+	width: 310px
+	height: 41px
+	line-height: 41px
+	padding: 0 40px 0 10px
+	position: relative
+	overflow: hidden
+	+box
+	input
+		height: 100%
+		width: 100%
+		vertical-align: middle
+		color: #6c6c6c
+		font-size: 15px
+		line-height: 15px
+		vertical-align: baseline
+	.ico
+		position: absolute
+		top: 7px
+		right: 6px
+/*-----adress-----*/
+.adress
+	a:hover
+		text-decoration: underline	
+.adress__text
+	color: #616161
+	font-size: 18px
+	line-height: 36px
+	margin: 0 0 8px 25px
+	text-decoration: none 
+	display: inline-block
+/*-----social-----*/
+.social
+	margin-bottom: 57px 
+.social__link
+	margin: 0 10px 
+/*-----map------*/
+.map
+	overflow: hidden
+	height: 168px
+	width: 370px	
+/*-----ico-----*/
+.ico
+	display: inline-block
+.i-blog
+	+s(i-blog)
+.i-smi
+	+s(i-smi)		
+.i-bio
+	+s(i-bio)
+.i-cont
+	+s(i-cont)		
+.i-search
+	+s(i-search)
+	cursor: pointer	
+.i-google
+	+s(i-google)
+	&:hover
+		+s(i-google_h)
+.i-twit
+	+s(i-twit)
+	&:hover
+		+s(i-twit_h)	
+.i-facebook
+	+s(i-facebook)
+	&:hover
+		+s(i-facebook_h)	
+.i-play
+	+s(i-play)
+	&:hover
+		+s(i-play_h)							
